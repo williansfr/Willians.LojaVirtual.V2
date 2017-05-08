@@ -1,0 +1,11 @@
+﻿@using Willians.LojaVirtual.Web.HtlmHelpers;
+@model Willians.LojaVirtual.Web.Models.ProdutoViewModel
+
+@foreach (var item in Model.Produtos) {
+    @Html.Partial("ProdutosDetalhes", item)
+}
+
+@*<div class="btn-group pull-right">
+    @Html.LinkDePaginas(Model.paginacao, x => Url.Action("ListaProdutos", new { pagina = x, categoriaSelecionada = Model.CategoriaAtual }))
+</div>*@
+

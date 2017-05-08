@@ -1,0 +1,14 @@
+﻿@model Willians.LojaVirtual.Web.V2.Models.ProdutosViewModel
+
+@{
+    ViewBag.Title = "Titulo da Nav-Index ProdutoViewModel";
+}
+
+<div class="row">
+    <div class="col-md-12 col-sm-12">
+        @Html.Partial("_Marcas")
+    </div>
+
+</div>
+
+@Html.Partial("_Nav", @Model)

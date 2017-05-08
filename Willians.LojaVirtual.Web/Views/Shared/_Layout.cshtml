@@ -1,0 +1,52 @@
+﻿@using System.Web.Optimization;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Willians Loja Virtual</title>
+
+@*
+
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/Content/ErroEstilo.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>*@
+    
+    @Styles.Render("~/Content/css")
+
+</head>
+<body>
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <a class="navbar-brand" href="#" >Willians - Seu Esporte é Aqui na Loja Teste</a>  
+        @Html.Action("Resumo", "Carrinho")
+    </div>
+
+    <div class="panel-body panel-success" >
+        <div class=col-xs-3 id="Categorias">
+            @Html.Action("Menu", "Categorias");
+        </div>
+        <div class=col-xs-8 id="Produtos">        
+            @RenderBody()        
+        </div>        
+    </div>
+
+    <footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+    
+
+    @Scripts.Render("~bundles/jquery")
+    @Scripts.Render("~bundles/jqueryval")
+    @Scripts.Render("~bundles/bootstraps")
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
