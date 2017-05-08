@@ -20,7 +20,7 @@ namespace Willians.LojaVirtual.Dominio.Repositorio
         }
 
         /// <summary>
-        /// Obter Algumas Marcas
+        /// Obter Algumas Marcas 
         /// </summary>
         /// <returns></returns>
         public IEnumerable<MarcaVitrine> ObterMarcas()
