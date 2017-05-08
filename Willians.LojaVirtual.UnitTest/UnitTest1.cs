@@ -14,7 +14,7 @@ namespace Willians.LojaVirtual.UnitTest
 
             var numeros = from i in lista.Take(3) select i;
                
-            int[] itens = { 9, 8, 5 };     
+            int[] itens = { 9, 8, 5 };      
 
             CollectionAssert.AreEqual(numeros.ToArray(), itens);
         }
