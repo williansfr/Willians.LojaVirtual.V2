@@ -68,6 +68,24 @@ namespace Willians.LojaVirtual.Web.V2.Controllers
             return View("Navegacao", _model);
         }
 
+        [Route("nav/grupo/{id}/{grupo}")]
+        public ActionResult ObterProdutosPorGrupo(string id, string grupo)
+        {
+            _repositorio = new ProdutoModeloRepositorio();
+            var produtos = _repositorio.ObterProdutosVitrine(grupo: id);
+            _model = new ProdutosViewModel { Produtos = produtos, Titulo = grupo };
+            return View("Navegacao", _model);
+        }
+
+        [Route("nav/categoria/{id}/{categoria}")]
+        public ActionResult ObterProdutosPorCategoria(string id, string categoria)
+        {
+            _repositorio = new ProdutoModeloRepositorio();
+            var produtos = _repositorio.ObterProdutosVitrine(categoria: id);
+            _model = new ProdutosViewModel { Produtos = produtos, Titulo = categoria };
+            return View("Navegacao", _model);
+        }
+
         #region Tenis Por Categoria
 
         [ChildActionOnly] // Somente Utilizado como Filho, a exemplo de um Web User Control
@@ -136,6 +154,7 @@ namespace Willians.LojaVirtual.Web.V2.Controllers
         }
 
         #endregion Casual
+
         #region [ Suplementos ]
 
         /// <summary>
