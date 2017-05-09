@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Willians.LojaVirtual.Dominio.Entidade;
 using Willians.LojaVirtual.Dominio.Entidade.Vitrine;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Willians.LojaVirtual.Dominio.Repositorio
 {
@@ -39,6 +40,8 @@ namespace Willians.LojaVirtual.Dominio.Repositorio
             modelBuilder.Entity<Produto>().ToTable("Produtos");
             modelBuilder.Entity<Administrador>().ToTable("Administradores");
             modelBuilder.Entity<Categoria>().ToTable("Categoria");
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

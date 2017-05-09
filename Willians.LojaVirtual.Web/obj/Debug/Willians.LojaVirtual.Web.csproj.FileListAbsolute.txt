@@ -107,7 +107,9 @@ C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\System.We
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\WebGrease.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\Willians.LojaVirtual.Dominio.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\AutoMapper.dll
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\FastMapper.dll
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\Microsoft.AspNet.Identity.Core.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\Willians.LojaVirtual.Dominio.pdb
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\Willians.LojaVirtual.Dominio.dll.config
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\Antlr3.Runtime.pdb
@@ -123,6 +125,8 @@ C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\System.We
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\System.Web.Helpers.xml
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\System.Web.Mvc.xml
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\AutoMapper.xml
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\obj\Debug\Willians.LojaVirtual.Web.csprojResolveAssemblyReference.cache
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\obj\Debug\Willians.LojaVirtual.Web.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web\obj\Debug\Willians.LojaVirtual.Web.pdb
