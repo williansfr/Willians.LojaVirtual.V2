@@ -156,3 +156,16 @@ C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Micros
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\obj\Debug\Willians.LojaVirtual.Web.V2.csprojResolveAssemblyReference.cache
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\obj\Debug\Willians.LojaVirtual.Web.V2.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\obj\Debug\Willians.LojaVirtual.Web.V2.pdb
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Microsoft.Owin.dll
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Microsoft.Owin.Security.dll
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Owin.dll
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Microsoft.Owin.xml
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Microsoft.Owin.Security.xml
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Web.V2\bin\Microsoft.Owin.Security.OAuth.xml

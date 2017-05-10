@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,9 @@ namespace Willians.LojaVirtual.Dominio.Entidade
 {
     public class Cliente : IdentityUser
     {
+        [NotMapped]
+        public string Senha { get; set; }
+
         // Telefone
         [Required]
         public virtual TelefoneCliente Telefone { get; set; }

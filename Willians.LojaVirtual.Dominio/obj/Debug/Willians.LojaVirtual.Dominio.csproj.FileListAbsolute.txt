@@ -55,3 +55,4 @@ C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\obj\Debug
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\obj\Debug\Willians.LojaVirtual.Dominio.csproj.GenerateResource.Cache
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\obj\Debug\Willians.LojaVirtual.Dominio.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\obj\Debug\Willians.LojaVirtual.Dominio.pdb
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\obj\Debug\Willians.LojaVirtual.Dominio.csprojResolveAssemblyReference.cache

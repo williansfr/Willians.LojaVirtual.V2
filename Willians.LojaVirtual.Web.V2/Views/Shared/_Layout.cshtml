@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNet.Identity
+
+<!DOCTYPE html>
 <html ng-app="app">
 <head>
     <meta charset="utf-8">
@@ -80,15 +82,30 @@
                 <div class="col-md-2 col-sm-2">
                     <!-- Logo -->
                     <div class="logo">
-                        <h1> @Html.ActionLink("Willians", "Index") </h1>
+                        <h1> @Html.ActionLink(  linkText: "Willians", 
+                                                actionName: "Index", 
+                                                controllerName: "Nav") </h1>
                     </div>
                 </div>
 
                 <div class="col-md-10 col-sm-10">
                     <div class="kart-links">
-                        <a href="Login.html">Seja bem-vindo(a)!  Faça seu login </a>
 
-                        <a href="login.html">Meu cadastro</a>
+                        @if (Request.IsAuthenticated)
+                        {
+                            <a href="@Url.Action("Login", "Cliente")">Seja bem-vindo(a) @User.Identity.GetUserName()! </a>
+
+                            using (Html.BeginForm("Logoff", "Cliente", FormMethod.Post, new { id = "logoff-form", style = "display: inline;" }))
+                            {
+                                <a href="javascript:document.getElementById('logoff-form').submit()">Logoff</a>
+                            }
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Login", "Cliente")">Seja bem-vindo(a)! Faça seu login </a>
+                        }
+
+                        <a href="@Url.Action("CriaCliente", "Cliente")">Meu cadastro</a>
                         <a href="register.html">Meus pedidos</a>
                         <a data-toggle="modal" href="#shoppingcart"><i class="fa fa-shopping-cart"></i> 3 itens - R$ 300,00</a>
                     </div>
@@ -101,7 +118,6 @@
                 <div class="col-md-12 col-sm-12">
                     @Html.Partial("_Menu")
                 </div>
-
 
             </div>
         </div>

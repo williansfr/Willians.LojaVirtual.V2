@@ -12,8 +12,10 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Willians.LojaVirtual.Dominio.Repositorio
 {
-    public class EfDbContext : DbContext
+    public class EfDbContext : IdentityDbContext<Cliente>
     {
+        public EfDbContext() : base("EfDbContext") { }
+
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Administrador> Administradores { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
@@ -33,6 +35,11 @@ namespace Willians.LojaVirtual.Dominio.Repositorio
         public DbSet<QuironProduto> QuironProdutos { get; set; }
         public DbSet<Estoque> Estoque { get; set; }
         public DbSet<ProdutoModelo> ProdutoModelo { get; set; }
+
+        public static EfDbContext Create()
+        {
+            return new EfDbContext();
+        }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

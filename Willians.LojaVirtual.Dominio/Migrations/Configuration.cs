@@ -9,7 +9,7 @@ namespace Willians.LojaVirtual.Dominio.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Willians.LojaVirtual.Dominio.Repositorio.EfDbContext context)
