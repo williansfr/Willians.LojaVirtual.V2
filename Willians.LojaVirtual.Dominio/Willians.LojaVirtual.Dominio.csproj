@@ -127,6 +127,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\ClientesRepositorio.cs" />
     <Compile Include="Repositorio\DetalhesProdutoRepositorio.cs" />
     <Compile Include="Repositorio\EfDbContext.cs" />
     <Compile Include="Repositorio\AdministradoresRepositorio.cs" />

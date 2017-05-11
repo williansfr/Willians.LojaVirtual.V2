@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -13,6 +14,8 @@ namespace Willians.LojaVirtual.Web.V2.Controllers
     public class CarrinhoController : Controller
     {
         private QuironProdutosRepositorio _produtoRepositorio = new QuironProdutosRepositorio();
+        private ClientesRepositorio _clienteRepositorio = new ClientesRepositorio();
+        private PedidosRepositorio _pedidoRepositorio = new PedidosRepositorio();
 
         public ViewResult Index(Carrinho carrinho, string returnUrl)
         {
@@ -23,28 +26,47 @@ namespace Willians.LojaVirtual.Web.V2.Controllers
             return View(carrinhoViewModel);
         }
 
+        [Authorize]
         public ViewResult FecharPedido()
         {
-            return View(new Pedido());
+            Pedido novoPedido = new Pedido();
+            novoPedido.ClienteId = User.Identity.GetUserId();
+            novoPedido.Cliente = _clienteRepositorio.ObterCliente(User.Identity.GetUserId());
+
+            return View(novoPedido);
         }
 
         [HttpPost]
-        public ViewResult FecharPedido(Carrinho carrinho, Pedido pedido)
+        [Authorize]
+        [ValidateAntiForgeryToken] // Garantir que o POST veio do cliente autorizado, não um ataque
+        public ActionResult FecharPedido(Carrinho carrinho, Pedido pedido)
         {
             //Carrinho carrinho = ObterCarrinho();
-            EmailConfiguracoes emailConfig = new EmailConfiguracoes();
-            emailConfig.EscreverArquivo = bool.Parse(ConfigurationManager.AppSettings["Email.EscreverArquivo"]);
-
-            EmailPedido emailPedido = new EmailPedido(emailConfig);
 
             if (!carrinho.ItensDoCarrinho().Any())
                 ModelState.AddModelError("", "Carrinho vazio! \nPedido não pode ser concluído!");
 
             if (ModelState.IsValid)
             {
-                emailPedido.ProcessarPedido(carrinho, pedido);
-                carrinho.LimparCarrinho();
-                return View("PedidoConcluido");
+                pedido.ProdutosPedidos = new List<ProdutoPedido>();
+
+                foreach(var item in carrinho.ItensDoCarrinho())
+                {
+                    #region Transfere Itens do Carrinho para a Lista de Produtos do Pedido
+
+                    var produtoPedido = new ProdutoPedido();
+                    produtoPedido.Quantidade = item.Quantidade;
+                    produtoPedido.ProdutoId = item.Produto.ProdutoId;
+
+                    pedido.ProdutosPedidos.Add(produtoPedido);
+
+                    #endregion Transfere Itens do Carrinho para a Lista de Produtos do Pedido                    
+                }
+
+                pedido.Pago = false;
+                pedido = _pedidoRepositorio.SalvarPedido(pedido); // Recupera o Id do Pedido Efetivado
+
+                return RedirectToAction("PedidoConcluido", new { pedidoId = pedido.Id });
             }
             else
                 return View(pedido);
@@ -97,9 +119,23 @@ namespace Willians.LojaVirtual.Web.V2.Controllers
         }
 
 
-        public ViewResult PedidoConcluido()
+        public ViewResult PedidoConcluido(Carrinho carrinho, int pedidoId)
         {
-            return View();
+            EmailConfiguracoes emailConfig = new EmailConfiguracoes();
+            emailConfig.EscreverArquivo = bool.Parse(ConfigurationManager.AppSettings["Email.EscreverArquivo"]);
+
+            EmailPedido emailPedido = new EmailPedido(emailConfig);
+
+            #region Montagem do Pedido
+
+            Pedido pedido = _pedidoRepositorio.ObterPedido(pedidoId);
+
+            #endregion Montagem do Pedido
+
+            emailPedido.ProcessarPedido(carrinho, pedido);
+            carrinho.LimparCarrinho();
+
+            return View(pedido);
         }
 
     }

@@ -5,35 +5,23 @@
 }
 
 <h2>Fechar o Pedido</h2>
-<p>Digite suas informações abaixo</p>
 
 @using (Html.BeginForm())
 {
     @Html.ValidationSummary()
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(c => c.ClienteId)
 
     <h3>Enviar Para:</h3>
 
     <div class="form-group">
         <label>Nome do Cliente:</label>
-        @Html.TextBoxFor(d => d.NomeCliente, new {@class="form-control"})
-
-        @Html.ValidationMessageFor(x => x.NomeCliente);
+        @Html.TextBoxFor(d => d.Cliente.NomeCompleto, new {@class="form-control", disabled = true})
     </div>
 
-    <h3>Dados para Entrega</h3>
+    <h3>Dados para Entrega</h3>    
     
-    
-    foreach (var propriedade in ViewData.ModelMetadata.Properties)
-    {
-        if (propriedade.PropertyName != "NomeCliente" && propriedade.PropertyName != "EmbrulhaPresente")
-        {
-            <label>
-                @(propriedade.DisplayName ?? @propriedade.PropertyName)
-            </label>
-
-            @Html.TextBox(propriedade.PropertyName, null, new { @class = "form-control" })
-        }
-    }
+    @Html.DisplayFor(m => m.Cliente.Endereco)
 
     <h3>Opções</h3>
     <div class="checkbox">
@@ -44,34 +32,3 @@
 
     <input class="btn btn-primary" type="submit" value="Fechar o Pedido" />
 }
-
-<script src="~/Scripts/jquery-1.10.2.min.js"></script>
-
-<script>
-    $("#Cep").change(function (e) {
-
-        // Evitar o Post
-        e.preventDefault();
-
-        $("#Endereco").val("");
-        $("#Bairro").val("");
-        $("#Cidade").val("");
-        $("#Estado").val("");
-
-        var cep = $("#Cep").val().replace("-", "");
-
-        $("#Cep").val(cep);
-
-        $.getJSON("http://cep.republicavirtual.com.br/web_cep.php?cep=" + cep + "&formato=json", {}, function (data) {
-            if (data.resultado_txt == "sucesso - cep completo") {
-                $("#Endereco").val(data.tipo_logradouro + ' ' + data.logradouro + ' ');
-                $("#Bairro").val(data.bairro);
-                $("#Cidade").val(data.cidade);
-                $("#Estado").val(data.uf);
-            }
-        })
-
-    });
-
-</script>
-
