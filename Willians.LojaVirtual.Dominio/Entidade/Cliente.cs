@@ -14,6 +14,11 @@ namespace Willians.LojaVirtual.Dominio.Entidade
         [NotMapped]
         public string Senha { get; set; }
 
+        [Required]
+        public string NomeCompleto { get; set; }
+
+        public ICollection<Pedido> Pedidos { get; set; }
+
         // Telefone
         [Required]
         public virtual TelefoneCliente Telefone { get; set; }

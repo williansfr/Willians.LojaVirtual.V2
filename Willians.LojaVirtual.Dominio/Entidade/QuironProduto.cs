@@ -35,7 +35,8 @@ namespace Willians.LojaVirtual.Dominio.Entidade
         public string Imagem
         {
             get { return ProdutoCodigo.Substring(0, 8) + ".jpg"; }
-
         }
+
+        public virtual ICollection<ProdutoPedido> ProdutosPedidos { get; set; }
     }
 }

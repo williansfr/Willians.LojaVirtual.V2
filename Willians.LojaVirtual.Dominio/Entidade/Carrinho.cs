@@ -10,7 +10,7 @@ namespace Willians.LojaVirtual.Dominio.Entidade
     {
         private readonly List<ItensCarrinho> _itemCarrinho = new List<ItensCarrinho>();
         // Adicionar
-        public void AdicionarItem(Produto produto, int quantidade)
+        public void AdicionarItem(QuironProduto produto, int quantidade)
         {
             ItensCarrinho item = _itemCarrinho.FirstOrDefault(p => p.Produto.ProdutoId == produto.ProdutoId);
 
@@ -27,7 +27,7 @@ namespace Willians.LojaVirtual.Dominio.Entidade
         }
 
         // Remover
-        public void RemoverItem(Produto produto)
+        public void RemoverItem(QuironProduto produto)
         {
             _itemCarrinho.RemoveAll(p => p.Produto.ProdutoId == produto.ProdutoId);
         }

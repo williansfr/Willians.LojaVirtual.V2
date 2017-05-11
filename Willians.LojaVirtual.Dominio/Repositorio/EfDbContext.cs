@@ -35,6 +35,9 @@ namespace Willians.LojaVirtual.Dominio.Repositorio
         public DbSet<QuironProduto> QuironProdutos { get; set; }
         public DbSet<Estoque> Estoque { get; set; }
         public DbSet<ProdutoModelo> ProdutoModelo { get; set; }
+        
+        public DbSet<Pedido> Pedidos { get; set; }
+        public DbSet<ProdutoPedido> ProdutosPedidos { get; set; }
 
         public static EfDbContext Create()
         {

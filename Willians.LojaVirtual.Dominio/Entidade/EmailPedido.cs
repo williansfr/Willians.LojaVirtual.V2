@@ -50,11 +50,11 @@ namespace Willians.LojaVirtual.Dominio.Entidade
 
             body.AppendLine(new string('-', 10));
             body.AppendLine("Enviar para: ");
-            body.AppendLine(pedido.NomeCliente ?? "");
-            body.AppendLine(pedido.Email ?? "");
-            body.AppendLine(pedido.Endereco ?? "");
-            body.AppendLine(pedido.Cidade ?? "");
-            body.AppendLine(pedido.Complemento ?? "");
+            body.AppendLine(pedido.Cliente.NomeCompleto ?? "");
+            body.AppendLine(pedido.Cliente.Email ?? "");
+            body.AppendLine((pedido.Cliente.Endereco.Rua ?? " ") + ", " + pedido.Cliente.Endereco.Numero ?? " ");
+            body.AppendLine(pedido.Cliente.Endereco.Cidade ?? "");
+            body.AppendLine(pedido.Cliente.Endereco.Complemento ?? "");
             body.AppendLine(new string('-', 10));
             body.AppendFormat("Para Presente: {0}", (pedido.EmbrulhaPresente ? "Sim" : "Não"));
 

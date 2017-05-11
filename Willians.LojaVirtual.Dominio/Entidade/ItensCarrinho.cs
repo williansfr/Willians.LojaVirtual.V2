@@ -8,7 +8,7 @@ namespace Willians.LojaVirtual.Dominio.Entidade
 {
     public class ItensCarrinho
     {
-        public Produto Produto { get; set; }
+        public QuironProduto Produto { get; set; }
 
         public int Quantidade { get; set; }
     }

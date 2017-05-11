@@ -107,8 +107,8 @@ C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debu
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\Willians.LojaVirtual.Dominio.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\Willians.LojaVirtual.Web.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\AutoMapper.dll
-C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\EntityFramework.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\EntityFramework.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\FastMapper.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\System.Web.Optimization.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.dll
@@ -125,8 +125,8 @@ C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debu
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\AutoMapper.xml
-C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\EntityFramework.xml
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\EntityFramework.xml
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\System.Web.Optimization.xml
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.UnitTest\obj\Debug\Willians.LojaVirtual.UnitTest.csprojResolveAssemblyReference.cache

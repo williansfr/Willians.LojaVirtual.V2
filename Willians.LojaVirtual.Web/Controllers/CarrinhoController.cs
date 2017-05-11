@@ -63,7 +63,7 @@ namespace Willians.LojaVirtual.Web.Controllers
 
             if (produto != null)
             {
-                carrinho.AdicionarItem(produto, quantidade);
+                //carrinho.AdicionarItem(produto, quantidade);
             }
 
             return RedirectToAction("Index", new { returnUrl });
@@ -87,7 +87,7 @@ namespace Willians.LojaVirtual.Web.Controllers
 
             if (produto != null)
             {
-                carrinho.RemoverItem(produto);
+                //carrinho.RemoverItem(produto);
             }
 
             return RedirectToAction("Index", new { returnUrl });
