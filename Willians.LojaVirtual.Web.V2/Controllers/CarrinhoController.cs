@@ -196,7 +196,7 @@ namespace Willians.LojaVirtual.Web.V2.Controllers
 
             Pedido pedido = _pedidoRepositorio.ObterPedido(pedidoId);
             pedido.Pago = true;
-
+             
             _pedidoRepositorio.SalvarPedido(pedido);
 
             #endregion Montagem do Pedido
