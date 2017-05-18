@@ -1,4 +1,4 @@
-﻿using Quiron.LojaVirtual.Dominio.Entidades.Pagamento;
+﻿using Willians.LojaVirtual.Dominio.Entidades.Pagamento;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -125,7 +125,7 @@ namespace Willians.LojaVirtual.Dominio.Entidade.Pagamento
         [XmlElement(ElementName = "extraAmount")]
         public string ExtraAmount
         {
-            get { return extraAmount.ToString("n2"); }
+            get { return extraAmount.ToString("n2").Replace(",","."); }
             set { extraAmount = decimal.Parse(value); }
         }
 

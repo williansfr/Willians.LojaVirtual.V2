@@ -51,9 +51,9 @@ C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\bin\Debug
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\bin\Debug\System.Web.WebPages.xml
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\obj\Debug\Willians.LojaVirtual.Dominio.csprojResolveAssemblyReference.cache
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\obj\Debug\Willians.LojaVirtual.Dominio.Migrations.CriaClienteDB.resources
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\obj\Debug\Willians.LojaVirtual.Dominio.Migrations.AddPedido.resources
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\obj\Debug\Willians.LojaVirtual.Dominio.csproj.GenerateResource.Cache
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\obj\Debug\Willians.LojaVirtual.Dominio.dll
 C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\obj\Debug\Willians.LojaVirtual.Dominio.pdb
-C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\obj\Debug\Willians.LojaVirtual.Dominio.Migrations.AddPedido.resources
+C:\Curso\Projetos\Willians.LojaVirtual.V2\Willians.LojaVirtual.Dominio\obj\Debug\Willians.LojaVirtual.Dominio.csprojResolveAssemblyReference.cache

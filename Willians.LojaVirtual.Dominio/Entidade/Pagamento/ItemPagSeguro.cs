@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace Quiron.LojaVirtual.Dominio.Entidades.Pagamento
+namespace Willians.LojaVirtual.Dominio.Entidades.Pagamento
 {
     public class ItemPagSeguro
     {
@@ -23,7 +23,7 @@ namespace Quiron.LojaVirtual.Dominio.Entidades.Pagamento
         [XmlElement(ElementName = "shippingCost")]
         public string ShippingCost
         {
-            get { return cost.ToString("n2"); }
+            get { return cost.ToString("n2").Replace(",","."); }
             set { cost = decimal.Parse(value); }
         }
     }

@@ -32,7 +32,11 @@ namespace Willians.LojaVirtual.Dominio.Repositorio
 
         public Pedido SalvarPedido(Pedido pedido)
         {
-            var pedidoReturn = _context.Pedidos.Add(pedido);
+            Pedido pedidoReturn = pedido;
+
+            if (pedido.Id == 0)
+                pedidoReturn = _context.Pedidos.Add(pedido);            
+
             _context.SaveChanges();
 
             return pedidoReturn;

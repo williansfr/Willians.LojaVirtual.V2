@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace Quiron.LojaVirtual.Dominio.Entidades.Pagamento
+namespace Willians.LojaVirtual.Dominio.Entidades.Pagamento
 {
     public class SenderPagSeguro
     {

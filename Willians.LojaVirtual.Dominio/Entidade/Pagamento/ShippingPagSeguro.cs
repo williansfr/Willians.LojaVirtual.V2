@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace Quiron.LojaVirtual.Dominio.Entidades.Pagamento
+namespace Willians.LojaVirtual.Dominio.Entidades.Pagamento
 {
     public class ShippingPagSeguro
     {
@@ -14,8 +14,11 @@ namespace Quiron.LojaVirtual.Dominio.Entidades.Pagamento
         [XmlElement(ElementName = "cost")]
         public string Cost
         {
-            get { return cost.ToString("n2"); }
+            get { return cost.ToString("n2").Replace(",","."); }
             set { cost = decimal.Parse(value); }
         }
+
+        [XmlElement(ElementName = "addressRequired")]
+        public string addressRequired { get { return "true";  } set {; } }
     }
 }

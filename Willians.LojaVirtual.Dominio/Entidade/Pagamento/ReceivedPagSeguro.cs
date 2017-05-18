@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace Quiron.LojaVirtual.Dominio.Entidades.Pagamento
+namespace Willians.LojaVirtual.Dominio.Entidades.Pagamento
 {
     [XmlRoot("checkout")]
     public class ReceivedPagSeguro
